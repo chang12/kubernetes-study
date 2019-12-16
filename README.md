@@ -5,6 +5,10 @@ docker build . -t kubernetes-study
 docker run -p 5000:5000 kubernetes-study
 ```
 
+```
+awsudo -u stats kubectl create sa fluent-bit
+```
+
 ## Trouble Shooting
 
 eksctl 로 cluster 를 생성했다면 자동으로 되지만, 아니라면 update-kubeconfig 가 필요하다.
